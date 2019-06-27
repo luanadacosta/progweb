@@ -40,7 +40,7 @@ $meio=$va;
     echo "O valor I está fora do intevalo permitido";
 }
 }else{
-    echo "Informe I está fora do "
+    echo "Informe I está fora do ";
 }
 
 

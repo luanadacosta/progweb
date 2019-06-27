@@ -25,3 +25,4 @@ if(isset($_POST["salario"]) and insset($_GET["financiamento"])){
 }else{
     echo"Informe o salario e o financiamento nos campos acima!";
 }
+?>

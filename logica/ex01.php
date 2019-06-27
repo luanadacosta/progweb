@@ -28,5 +28,4 @@ for($x=0;$x<11;$x++){
 }else{
     echo "Informe um número no campo acima";
 }
-
 ?>

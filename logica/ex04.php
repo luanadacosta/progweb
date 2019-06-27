@@ -16,5 +16,5 @@ if($nota<3){
 echo "Sua nota é ".$nota." e seu conceito é C";
 if(($nota>=7 and $nota<9){
     echo "Sua nota é ".$nota." e seu conceito é B";
-    if(($nota>=10 and $nota<) "e seu conceito é A parabéns!;
+    if(($nota>=10 and $nota<) "e seu conceito é A parabéns!";
 ?>

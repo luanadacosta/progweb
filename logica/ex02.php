@@ -14,5 +14,5 @@ if($numero>=0){
 }else{
     echo $numero="Este numero ".$numero" é positivo e Impar";
 }
-}
+
 ?>

@@ -1,0 +1,325 @@
+/* Encapsulador */
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1024px;
+  }
+  
+  /* Estilo da lista */
+  .wrapper ul {
+    list-style: none;
+  }
+  
+  /* Estilo inicial dos ícones */
+  .wrapper ul li {
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    margin: 0 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 10%;
+    border: 5px solid #D8E2DC;
+    float: left;
+    transition: all 0.5s ease;
+  }
+  
+  .wrapper ul li .fa {
+    color: rgb(165, 165, 165);
+    margin-top: 35px;
+    transition: all 0.5s ease;
+  }
+  
+  
+  
+  
+  
+  /* Icone 1 */
+  .wrapper ul li:hover.bullhorn {
+    border: 5px solid #3b5998;
+    box-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+  }
+  .wrapper ul li:hover .fa-bullhorn {
+    color: #3b5998;
+    text-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg); 
+    -o-transform:rotate(360deg);
+  }
+  
+  /* Icone 2 */
+  .wrapper ul li:hover.gift {
+    border: 5px solid #aa00ed;
+    box-shadow: 0 0 15px #9600ed;
+    transition: all 0.5s ease;
+  }
+  .wrapper ul li:hover .fa-gift {
+    color: #8200ed;
+    text-shadow: 0 0 15px #a200ed;
+    transition: all 0.5s ease;
+    animation: zoom 0.5s alternate infinite ease-in;
+  }
+
+  /* Icone 3 */
+  .wrapper ul li:hover.grimace {
+    border: 5px solid #ed00d9;
+    box-shadow: 0 0 15px #ed00d9 ;
+    transition: all 0.5s ease;
+  }
+  .wrapper ul li:hover .fa-grimace {
+    color:#ed00d9 0;
+    text-shadow: 0 0 15px #ed00d9;
+    transition: all 0.5s ease;
+    animation: flash 0.5s alternate infinite ease-in;
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg); 
+    -o-transform:rotate(360deg);
+
+  }
+
+   /* Icone 4 */
+   .wrapper ul li:hover.angry{
+    border: 5px solid #ed0000;
+    box-shadow: 0 0 15px #ed0000;
+    transition: all 0.5s ease;
+  }
+  .wrapper ul li:hover .fa-angry{
+    color: #ed0000;
+    text-shadow: 0 0 15px #ed0000;
+    transition: all 0.5s ease;
+    animation: shake 0.5s alternate infinite ease-in;
+   /* -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg); 
+    -o-transform:rotate(360deg);*/
+  }
+
+   /* Icone 5 */
+      .wrapper ul li:hover.grin-wink {
+        border: 5px solid #6824d6;
+        box-shadow: 0 0 15px #6824d6 ;
+        transition: all 0.5s ease;
+      }
+      .wrapper ul li:hover .fa-grin-wink {
+        color:#6824d6 0;
+        text-shadow: 0 0 15px #6824d6;
+        transition: all 0.5s ease;
+        animation:bounce 0.5s alternate infinite ease-in;
+       
+    
+    }
+
+   /* Icone 6 */
+   .wrapper ul li:hover.dizzy{
+    border: 5px solid #0f72f3;
+    box-shadow: 0 0 15px #0f72f3;
+    transition: all 0.5s ease;
+  }
+  .wrapper ul li:hover .fa-dizzy{
+    color:  #0fd1f3;
+    text-shadow: 0 0 15px  #0fd1f3;
+    transition: all 0.5s ease;
+    animation: hinge 0.5s alternate infinite ease-in;
+  }
+
+/* Icone 7 */
+.wrapper ul li:hover.bomb{
+    border: 5px solid #ed3700;
+    box-shadow: 0 0 15px #ed3700;
+    transition: all 0.5s ease;
+  }
+  .wrapper ul li:hover .fa-bomb {
+    color: #ed3700;
+    text-shadow: 0 0 15px #ed3700;
+    transition: all 0.5s ease;
+    animation: bounceOut 0.5s alternate infinite ease-in;
+  }
+
+  
+  
+  /* Animações */
+  @keyframes zoom {
+    0%   {transform: scale(.8);}
+    100% {transform: scale(1.5);}
+  }
+
+
+
+/* Animações */
+@keyframes bounceOut {
+    0%   {transform: (.8);}
+    100% {transform: scale(1.5);}
+  }
+  
+  @keyframes flash {
+    from,
+    to {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+    }
+  
+    @keyframes shake {
+        from,
+        to {
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+        }
+      
+        10%,
+        30%,
+        50%,
+        70%,
+        90% {
+          -webkit-transform: translate3d(-10px, 0, 0);
+          transform: translate3d(-10px, 0, 0);
+        }
+      
+        20%,
+        40%,
+        60%,
+        80% {
+          -webkit-transform: translate3d(10px, 0, 0);
+          transform: translate3d(10px, 0, 0);
+        }
+      }
+ 
+  
+  
+  @keyframes bounce {
+    20% {
+      -webkit-transform: rotate3d(0, 0, 1, 15deg);
+      transform: rotate3d(10, 0, 1, 15deg);
+    }
+  
+    40% {
+      -webkit-transform: rotate3d(0, 0, 1, -10deg);
+      transform: rotate3d(0, 0, 1, -10deg);
+    }
+  
+    60% {
+      -webkit-transform: rotate3d(0, 0, 1, 5deg);
+      transform: rotate3d(0, 0, 1, 5deg);
+    }
+  
+    80% {
+      -webkit-transform: rotate3d(0, 0, 1, -5deg);
+      transform: rotate3d(0, 0, 1, -5deg);
+    }
+  
+    to {
+      -webkit-transform: rotate3d(0, 0, 1, 0deg);
+      transform: rotate3d(0, 0, 1, 0deg);
+    }
+  }
+  
+  
+  
+  @keyframes flash {
+    from {
+      -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0)
+        rotate3d(0, 1, 0, -360deg);
+      transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, -360deg);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
+  
+    40% {
+      -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+        rotate3d(0, 1, 0, -190deg);
+      transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+        rotate3d(0, 1, 0, -190deg);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
+  
+    50% {
+      -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+        rotate3d(0, 1, 0, -170deg);
+      transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 150px)
+        rotate3d(0, 1, 0, -170deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+  
+    80% {
+      -webkit-transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0)
+        rotate3d(0, 1, 0, 0deg);
+      transform: perspective(400px) scale3d(0.95, 0.95, 0.95) translate3d(0, 0, 0)
+        rotate3d(0, 1, 0, 0deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+  
+    to {
+      -webkit-transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0)
+        rotate3d(0, 1, 0, 0deg);
+      transform: perspective(400px) scale3d(1, 1, 1) translate3d(0, 0, 0) rotate3d(0, 1, 0, 0deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+  }
+
+
+
+  @keyframes bounceOut {
+    20% {
+      -webkit-transform: scale3d(0.9, 0.9, 0.9);
+      transform: scale3d(0.9, 0.9, 0.9);
+    }
+
+    50%,
+    55% {
+      opacity: 1;
+      -webkit-transform: scale3d(1.1, 1.1, 1.1);
+      transform: scale3d(1.1, 1.1, 1.1);
+    }
+  
+    to {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+
+}
+    @keyframes hinge {
+        0% {
+          -webkit-transform-origin: top left;
+          transform-origin: top left;
+          -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+        }
+      
+        20%,
+        60% {
+          -webkit-transform: rotate3d(0, 0, 1, 80deg);
+          transform: rotate3d(0, 0, 1, 80deg);
+          -webkit-transform-origin: top left;
+          transform-origin: top left;
+          -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+        }
+      
+        40%,
+        80% {
+          -webkit-transform: rotate3d(0, 0, 1, 60deg);
+          transform: rotate3d(0, 0, 1, 60deg);
+          -webkit-transform-origin: top left;
+          transform-origin: top left;
+          -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+          opacity: 1;
+        }
+      
+        to {
+          -webkit-transform: translate3d(0, 700px, 0);
+          transform: translate3d(0, 700px, 0);
+          opacity: 0;
+        }
+    }
+    
+   
+    

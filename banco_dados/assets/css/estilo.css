@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1288px;
+    width: 100%;
+    padding: 15px;
+}
+
+.flex-space-bet{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    background-color: cornflowerblue;
+    width: 100%;
+
+}
+
+header nav a{
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Tahoma;
+    padding: 18px 18px 18px 0;
+}
+
+.paralax{
+
+}
+
+footer{
+    background-color: deeppink;
+    color: #fff;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+h1{
+    font-size: 22px;
+    background:  -webkit-linear-gradient( #eb09a7,#4d16e6  );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 18px;
+    font-family: Tahoma;
+}
+
+#formulario{
+    min-height: 350px;
+}
+
+::selection{
+    background-color: rgb(13, 14, 13);
+}
+/*label dos formularios*/
+#formulario label{
+    display: block;
+    font-size: 18px;
+}
+/*Campo de texto dos formularios*/
+#formulario input[type=text]
+{
+font-size: 18px;
+padding: 5px 10px;
+font-family: sans-serif;
+margin-bottom: 18px;
+}
