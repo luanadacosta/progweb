@@ -10,24 +10,24 @@ if(isset($_POST["submit"])){
             
             break;
         case 2: 
-            $a1 = array("nome" => "Programa","Globo esporte","hora" => "12:47", "class" => "livre");
-            $a2 = array("nome" => "Programa","Jornal Hoje", "hora" => "13:20","class"=> "livre");
+            $a1 = array("nome" => "Globo esporte","hora" => "12:47", "class" => "livre");
+            $a2 = array("nome" => "Jornal Hoje", "hora" => "13:20","class"=> "livre");
             break;
         case 3: 
-            $a1 = array("nome" => "Programa","Sessão da Tarde","hora" => "13:58" ,"class" => "livre");
-            $a2 = array("nome" => "Programa","O Álbum da grande familia","hora" => "15:48" ,"class" => "livre");
+            $a1 = array("nome" => "Sessão da Tarde","hora" => "13:58" ,"class" => "livre");
+            $a2 = array("nome" => "O Álbum da grande familia","hora" => "15:48" ,"class" => "livre");
             break;
         case 4: 
-            $a1 = array("nome" => "Programa","Vale a Pena ver de novo","hora" => "16:43" ,"class" => "livre");
-            $a2 = array("nome" => "Programa","Malhação","hora" => "17:55" ,"class" => "livre");
+            $a1 = array("nome" => "Vale a Pena ver de novo","hora" => "16:43" ,"class" => "livre");
+            $a2 = array("nome" => "Malhação","hora" => "17:55" ,"class" => "livre");
           
             break;
         case 5: 
-            $a1 = array("nome" => "Novela","Órfãos da Terra","hora" => "18:27" ,"class" => "livre");
-            $a2 = array("nome" => "Novela","Verão 90","hora" => "19:33" ,"class" => "livre");
+            $a1 = array("nome" => "Órfãos da Terra","hora" => "18:27" ,"class" => "livre");
+            $a2 = array("nome" => "Verão 90","hora" => "19:33" ,"class" => "livre");
         case 6: 
-            $a1 = array("nome" => "Programa","Jornal Nacional","hora" => "20:30" ,"class" => "livre");
-            $a2 = array("nome" => "Novela","A Dona do Pedaço","hora" => "21:21" ,"class" => "livre");
+            $a1 = array("nome" => "Jornal Nacional","hora" => "20:30" ,"class" => "livre");
+            $a2 = array("nome" => "A Dona do Pedaço","hora" => "21:21" ,"class" => "livre");
             break;
     }
 }
