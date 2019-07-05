@@ -63,7 +63,7 @@ if(isset($_POST["semanas"])){
 ?>    
 
 <div id="Tabela"> 
-    <h1>Tabela Programação</h1>    
+    <h1>Tabela de Programação</h1>    
     <table border="1">
     
      
