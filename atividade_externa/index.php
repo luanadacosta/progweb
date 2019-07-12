@@ -19,12 +19,12 @@ $calculo = sqrt($valor);
             <input type="text" name="valor">
             <input type="submit" name="submit" value="Calcular">
 </form>
-<div>
+</div>
 
 <?php
 if(isset($_POST["submit"])){
     ?>
-    <div id="resultado">
+    <div action="resultado">
         <?php echo "<h2> A raiz de:$valor é $calculo </h2>";?>
 </div>
 
@@ -37,7 +37,7 @@ if(isset($_POST["valor"])){
     if($valor>=0){
      
         if(($valor%2)==0){
-            echo "O numero" .$valor. " é e Par";
+            echo "O numero" .$valor. " é Par";
         }else{
         echo "O numero ".$valor. "é Ímpar";
         }
