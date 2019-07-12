@@ -1,8 +1,7 @@
 <?php
 if(isset($_POST["submit"])){
-
-    $valor   = $_POST["valor"];
-    $calculo = sqrt($valor);
+$valor   = $_POST["valor"];
+$calculo = sqrt($valor);
 
 }
 ?>
@@ -16,17 +15,17 @@ if(isset($_POST["submit"])){
 </body>
     <div id="formulario">
         <form id="text.php" method="post">
-            <h1>Digite um numero a baixo</h1>
+            <h1>Infome um Número a Baixo</h1>
             <input type="text" name="valor">
-            <input type="submit" name="submit" value="calcular">
+            <input type="submit" name="submit" value="Calcular">
 </form>
-</div>
+<div>
 
 <?php
 if(isset($_POST["submit"])){
-?>
+    ?>
     <div id="resultado">
-        <?php echo " A raiz de $valor é $calculo ";?>
+        <?php echo "<h2> A raiz de:$valor é $calculo </h2>";?>
 </div>
 
 <?php
@@ -36,16 +35,16 @@ if(isset($_POST["submit"])){
 if(isset($_POST["valor"])){
     $valor = floor($_POST["valor"]);
     if($valor>=0){
-    if(($valor%2)==0){
-            echo "O numero" .$valor.  "é Par"; 
+     
+        if(($valor%2)==0){
+            echo "O numero" .$valor. " é e Par";
         }else{
-        echo "O numero " .$valor. " é Ímpar";
-        }
-        }else{
-        echo "Informe um valor";
+        echo "O numero ".$valor. "é Ímpar";
         }
     }
-    
+}
+        
+       
 ?>
 
 </body>
