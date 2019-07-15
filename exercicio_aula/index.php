@@ -1,126 +1,41 @@
 <?php
-
-// Declarando os valores das variáveis
-
-$valorA = 15;
-$valorB = 8;
-
- 
-
-?>
-
-<h2>Adição</h2>
-
-<p>
-
-<?php
-echo $valorA + $valorB;
-
-?>
-
-</p>
-
-<h2>Subtração</h2>
-
-<p>
-
-<?php
-
- 
-
-echo $valorA - $valorB;
-
- 
-
-?>
-
-</p>
-
-<h2>Multiplicação</h2>
-
-<p>
-<?php
-echo $valorA * $valorB;
-?>
-
-</p>
-
-<h2>Divisão</h2>
-
-<p>
-
-<?php
-
- 
-
-echo $valorA / $valorB;
-
- 
-
-?>
-
-</p>
-
-<h2>Módulo(resto da divisão)</h2>
-
-<p>
-
-<?php
-
- 
-
-echo $ValorA % $valorB;
-
- 
-
-?>
-
-</p>
-
-
-
-
-
-<?php
 if(isset($_POST["submit"])){
-$valorA = $_POST["valorA"];
-$valorB = $_POST["valorB"];
-
-$somar       $valorA+$valorB
-$subtrair    $valorA-$valorB
-$multiplicar $valorA*$valorB
-$dividir     $valorA/$valorB
-
-
+$valorA   = $_POST["valor"];
+$valorB = $_POST["valor"];
 }
 ?>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="UTF-8">
-   <title>Exercicio</title>
+    <title>Documento</title>
 </head>
 <body>
-    
-<div id="formulario">
-        <form id="text.php" method="post">
-            <h1>ValorA</h1> 
-            <label for="valor">Informe um numero</label>
-            <input type="text" name="valor">
-          
-            <input type="submit" name="submit" value="Calcular">
-</form> 
-<div>
-<?php
-if(isset($_POST["submit"])){
-    ?>
+    <div id="formulario">
+        <form action="exercicio_contas.php" method="POST">
+        <label for="valorA">valor A</label>
+        <input type="text" name="valorA">
+        <label for="valorB">valor B</label>
+        <input type="text" name="valorB">
+        <input type="submit" name="submit" value="Calcular">
+
+    </form>
+    </div>
+
+    <?php 
+    if (isset($_POST["submit"])){
+    ?>    
     <div id="resultado">
-        <?php echo  $valoraA=15 * $valorB=7 ; ?>
-       
-        
-       
-
-
-
+    <?php
+    echo "O resultado da soma de ".$valorA." + ".$valorB." é: ".$somar."<br>";
+    echo "O resultado da subtração de ".$valorA." - ".$valorB." é: ".$subtrair."<br>";
+    echo "O resultado da divisão de ".$valorA." / ".$valorB." é: ".$dividir."<br>";
+    echo "O resultado da multiplicação de ".$valorA." * ".$valorB." é: ".$multiplicar."<br>";
+    ?>
+    </div>
+    <?php
+    } 
+    ?>
+    
 </body>
 </html>
