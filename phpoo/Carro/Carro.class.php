@@ -1,5 +1,5 @@
 <?php
-class Carro{
+abstract class Carro{
 
     //Atributos
     //Caractteristicas da classe representada
@@ -13,14 +13,35 @@ class Carro{
 
     //Métodos
     //Comportamentos (ações) da classe representada
-    //Aqui pucha a parte de cima atributos
+    //Aqui pucha a parte de cima (atributos)
+    function __construct($p1,$p2,$p3,$p4,$p5,$p6,$p7){
+        echo "Criando o Carro<br>";
+       
+        //Criando nosso carro
+        $this->setMarca($p1);
+        $this->setAnoDeFabricacao($p2);
+        $this->setModelo($p3);
+        $this->setCor($p4);
+        $this->setLigado($p5);
+        $this->setVelocidade($p6);
+        $this->setVelocidadeMaxima($p7);
+
+        //exibindo o estado inicial do carro
+        echo "Marca: ".$this->getMarca(). "<br>";
+        echo "Fabricação: ".$this->getAnoDeFabricacao(). "<br>";
+        echo "Modelo: ".$this->getModelo(). "<br>";
+        echo "Cor: ".$this->getCor(). "<br>";
+        echo "Ligado: ".$this->getLigado(). "<br>";
+        echo "Velocidade: ".$this->getVelocidade(). "<br>";
+        echo "Velocidde Máxima: ".$this->getVelocidadeMaxima(). "<br>";
+    }
     
     //Getters
     public function getMarca(){
         return $this->marca;
     }
-    public function getAnoDeFabrica(){
-        return $this->anodefabrica;
+    public function getAnoDeFabricacao(){
+        return $this->anodefabricacao;
     }
     public function getModelo(){
         return $this->modelo;
@@ -52,7 +73,7 @@ class Carro{
         $this->cor=$cor;
     }
     public function setLigado($ligado){
-        $this->ligado=$ligadp;
+        $this->ligado=$ligado;
     }
     public function setVelocidade($velocidade){
         $this->velocidade=$velocidade;
@@ -91,7 +112,7 @@ class Carro{
             echo "O carro está desligado <br>";
         }
         echo "FINALIZANDO ACELERAÇÃO<br>";
-        echo "===================================<br><br>";
+        echo "========================================<br><br>";
     }
 
 }

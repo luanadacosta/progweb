@@ -1,24 +1,14 @@
 <?php
 
 //Importar a classe
-require_once 'Carro.class.php';
+require_once 'CarroTradicional.class.php';
 
 //Instânciando o objeto
 //a partir da classe
-$carro =  new Carro();
-
-//Criando o nosso carro
-$carro->setMarca("Volkswagen");
-$carro->setAnoDeFabricacao("2018");
-$carro->setModelo("Gol");
-$carro->setCor("Branca");
-$carro->setLigado(false);
-$carro->setVelocidade(0);
-$carro->setVelocidadeMaxima(200);
-
-echo "CARRO: ".$carro->getModelo()."<br><br>";
+$carro =  new CarroTradicional("Volkswagen","2018","Gol","Branca",false,0,200,"340 litros",false,0);
 
 $carro->acelerar();
 $carro->ligaredesligar();
 $carro->acelerar();
+
 ?>
