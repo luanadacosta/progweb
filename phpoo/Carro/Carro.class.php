@@ -1,6 +1,5 @@
 <?php
 abstract class Carro{
-
     //Atributos
     //Caractteristicas da classe representada
     private $marca;
@@ -10,7 +9,6 @@ abstract class Carro{
     private $ligado;
     private $velocidade;
     private $velocidademaxima;
-
     //Métodos
     //Comportamentos (ações) da classe representada
     //Aqui pucha a parte de cima (atributos)
@@ -25,7 +23,6 @@ abstract class Carro{
         $this->setLigado($p5);
         $this->setVelocidade($p6);
         $this->setVelocidadeMaxima($p7);
-
         //exibindo o estado inicial do carro
         echo "Marca: ".$this->getMarca(). "<br>";
         echo "Fabricação: ".$this->getAnoDeFabricacao(). "<br>";
@@ -58,7 +55,6 @@ abstract class Carro{
     public function getVelocidadeMaxima(){
         return $this->velocidademaxima;
     }
-
     //Setters
     public function setMarca($marca){
         $this->marca;
@@ -97,7 +93,6 @@ abstract class Carro{
         echo "FINALIZANDO A IGNIÇÃO<br>";
         echo "========================================<br><br>";
     }
-
     //Acelerar
     public function acelerar(){
         echo "INICIANCDO ACELERAÇÃO<br>";
@@ -114,7 +109,5 @@ abstract class Carro{
         echo "FINALIZANDO ACELERAÇÃO<br>";
         echo "========================================<br><br>";
     }
-
 }
-
 ?>
