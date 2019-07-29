@@ -3,8 +3,8 @@
 require_once 'Produto.class.php';
 
 $id = 1;
-$nome = "Celular";
-$descricao = "Celular de auta tecnologia";
+$nome = "Luana Maldonado";
+$descricao = "Hub de tecnologias para automoçao residencial";
 $sku = 1488;
 $ean = 7899993905093;
 $valorunitario = 505.70;
@@ -36,10 +36,10 @@ $produto = new Produto($id,$nome,$descricao,$sku,$ean,$valorunitario,$id_categor
             <p><?php echo $produto->getSku();?></p>
             <span>Valor Unitario</span>
             <p><?php echo $produto->getValorunitario();?></p>
-            </section>
-        <section id="barcode"></select>
+        </section>
+        <section id="barcode"></section>
             <img src="Barcode.php?produto=<?php echo $produto->getEan(); ?>" alt="<?php echo $produto->getNome(); ?>">
-            </section>
+        </section>
     </main>
     
 </body>
