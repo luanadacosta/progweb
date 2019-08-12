@@ -25,6 +25,7 @@ if(mysqli_num_rows($registros) > 0){
             <th>Telefone</th>
             <th>Celular</th>
             <th>E-mail</th>
+            <th>Convenio</th>
         </tr>
     <?php
 	while($reg = mysqli_fetch_array($registros)){
@@ -35,6 +36,7 @@ if(mysqli_num_rows($registros) > 0){
             <td><?php echo $reg['telefone'];?></td>
             <td><?php echo $reg['celular'];?></td>
             <td><?php echo $reg['email'];?></td>
+            <td><?php echo $reg['convenio'];?></td>
         </tr>
     <?php
     }
