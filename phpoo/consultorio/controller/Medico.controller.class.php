@@ -21,7 +21,7 @@ class MedicoController extends Crud {
 
     //Pesquisa de médicos por nome
     public function pesquisaDeMedicos($expressao){
-        $sql = "SELECT * FROM $this->tabelafilha
+        $sql = "SELECT * FROM ".$this->tabelafilha."
                 WHERE nome LIKE '".$expressao."%'";
         return $this->execute_query($sql);
     }
@@ -31,7 +31,6 @@ class MedicoController extends Crud {
         $sql = "SELECT COUNT(*) AS total FROM ".$this->tabelafilha."";
         return $this->execute_query($sql);
     }
-
 
 
 }

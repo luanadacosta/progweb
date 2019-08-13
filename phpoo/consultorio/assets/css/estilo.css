@@ -6,87 +6,100 @@ body{
     background-repeat: repeat-x;
     background-color: #f8f5f5;
     font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
   
 }
 #topo{
     padding: 5px;
-    color: #4dd696;
+    color: #1960e4;
     font-family: 'Fjalla One', sans-serif;
-    font-size: 20px;
-    border: 20px none;
+    font-size: 10px;
+    border: 10px none;
     width: 1940px;
     background-attachment: scroll;
     background-position: right center;
     background-repeat: no-repeat;
-    background-color: #1c2492;
+    background-color: #eff2f7;
 
 }
 
-header {
-    display: block;
+#logotipo{
+    margin-top: 40px;
+    margin-left: 40px;
 }
+
+
 
 span{
     margin: 0 auto;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(199, 21, 169);
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(78, 132, 233);
     padding: 10px;
-}
-
-footer{
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(33, 135, 231);
-    height: 255px;
-    width: 100%;
-
+    font-size: 15px;
 }
 
 #submenu {
     padding: 5px;
-    color: #4dd696;
+    color: #134ebd;
     font-family: 'Fjalla One', sans-serif;
-    font-size: 20px;
-    border: 20px none;
-    width:1940px;
+    padding-top: 30px;
+    padding-bottom: 40px;
     background-attachment: scroll;
     background-position: right center;
-    background-repeat: no-repeat;
     background-color: #589be9;
 }
 
-#rodape{
-    padding: 5px;
-    color: #4dd696;
-    font-family: 'Fjalla One', sans-serif;
-    font-size: 20px;
-    border: 20px none;
-    width: 1940px;
-    background-attachment: scroll;
-    background-position: right center;
-    background-repeat: no-repeat;
-    background-color: #1c2492;
 
-}
 #conteudo{
-    color: black;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    width: 1000px;
+    background-repeat: no-repeat;
+    height: 800px;
+    background-size: cover;
+    background-position: center center;
+    background-image: url(http://drsaudecarapicuiba.com.br/wp-content/uploads/big-image1.jpg);
+    width: 100%;
+    opacity: 1;
+    visibility: inherit;
+    z-index: 20;
+    
+}
+
+footer{
+    padding: 5px;
+    color: #f7fdfa;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    font-family: 'Fjalla One', sans-serif;
+    background-color: #15194b;
+}
+
+
+
+a{
+    color: #f3faf7;
     font-size: 20px;
     border: 20px none;
 }
 
 li{
-    color: #4dd696;
-    font-size: 20px;
-    border: 20px none;
-    width: 140px;
+    color: #3877ec;
+ 
 
 }
-a{
-    color: #4dd696;
-    font-size: 20px;
-    border: 20px none;
+
+form{
+    margin: 0 auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(14, 14, 15);
+    padding: 10px;
+    font-size: 15px;
+
+
+    
 }
+
+
+
+
 
 
 
