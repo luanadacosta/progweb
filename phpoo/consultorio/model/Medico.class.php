@@ -7,15 +7,18 @@ class Medico {
     private $telefone;
     private $celular;
     private $email;
+    private $usuario;
+
 
     // MÉTODO CONSTRUTOR
-    function __construct($p1,$p2,$p3,$p4,$p5) {
+    function __construct($p1,$p2,$p3,$p4,$p5,$p6) {
 
         $this->setId_medico($p1);
         $this->setNome($p2);
         $this->setTelefone($p3);
         $this->setCelular($p4);
         $this->setEmail($p5);
+        $this->setUsuario($p5);
 
         return $this;
     }
@@ -60,6 +63,13 @@ class Medico {
 
     public function setEmail($email){
         $this->email = $email;
+    }
+    public function getId_usuario(){
+        return $this->id_usuario;
+    }
+
+    public function setId_usuario($id_usuario){
+        $this->id_usuario = $id_usuario;
     }
 
 }

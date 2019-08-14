@@ -32,6 +32,11 @@ class MedicoController extends Crud {
         return $this->execute_query($sql);
     }
 
-
+    public function pesquisaDeMedicos($expressao){
+    $sql = "SELECT * FROM ".$this->tabelafilha."
+    INNER JOIN medico AS med ON med.id_usuario = usu.id_usuario
+    WHERE med.nome LIKE '".$expressao."'a%'";
+    return $this->execute_query($sql);
+    
 }
 ?>
