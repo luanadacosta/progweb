@@ -4,37 +4,25 @@ body{
     background-attachment: scroll;
     background-position: top right;
     background-repeat: repeat-x;
-    background-color: #f8f5f5;
-    font-family: 'Roboto', sans-serif;
+    
     overflow-x: hidden;
   
 }
 #topo{
-    padding: 5px;
-    color: #0c51aa;
     font-family: 'Fjalla One', sans-serif;
-    font-size: 10px;
-    border: 10px none;
-    width: 1940px;
-    background-attachment: scroll;
-    background-position: right center;
-    background-repeat: no-repeat;
-    background-color: #f6f8fa;
-
+    width: 1930px;
+    background-color: #faf8f9;
 }
 
 #logotipo{
-    margin-top: 40px;
-    margin-left: 40px;
+    margin-top: 20px;
 }
 
-
-
 span{
-    margin: 0 auto;
+    
     font-family: 'Times New Roman', Times, serif;
-    color: rgb(78, 132, 233);
-    padding: 5px;
+    color: rgb(241, 243, 247);
+    padding: 1px;
     font-size: 15px;
 }
 
@@ -66,8 +54,7 @@ span{
 footer{
     padding: 5px;
     color: #f7fdfa;
-    padding-top: 80px;
-    padding-bottom: 40px;
+   
     font-family: 'Fjalla One', sans-serif;
     background-color: #616164;
 }
@@ -82,16 +69,19 @@ a{
 
 ul{
     display: flex;
+    
+    
 }
 
 li{
     color: #3877ec;
     inline-size: auto;
-    margin: 0 15px;
+    margin: 20px;
 }
 
 #topo div{
     display: flex;
+    margin: 8px;
 }
 
 form{
@@ -102,15 +92,21 @@ form{
     font-size: 15px;
 }
 
-.h3{
-    inline-size: inherit
-
+h3{
+    font-family: 'Times New Roman', Times, serif;
+ 
 }
 
-#conteudo{
-    overflow-x: hidden;
+#contatos{
+    color: #f7fdfa;
 }
 
+#table-border {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 2px;
+    border-color: rgb(224, 15, 15);
+}
 
 
 

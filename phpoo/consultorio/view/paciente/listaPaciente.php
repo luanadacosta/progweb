@@ -1,24 +1,27 @@
 <?php
-/*
-* 	Descrição do Arquivo
-* 	@autor - João Ricardo Gomes dos Reis
-* 	@data de criação - 09/08/2019
-*/
-
 //Inclui as classes controladoras
 require_once("../../controller/Paciente.controller.class.php");
 //Criando as novas instâncias das classes
 $controller = new PacienteController;
-//Método de Listagem
-$registros 	= $controller->select();
 ?>
 
-<!-- Listagem -->
-<?php
-if(mysqli_num_rows($registros) > 0){
+<?php   
+if(isset($_GET["paciente"])){
+    $controller->excluiPaciente($_GET["paciente"]);
+    echo "<h3>O Paciente de código ".$_GET["paciente"]." foi excluído com sucesso!</h3>";
+}
+//Método de listagem
+$registros = $controller->select();
 ?>
-    <h1>Listagem da Tabela de Pacientes</h1>
-    <table border="1">
+
+   <!--Listagem-->
+    <a href="cadastrapaciente.php">Cadastrar Novo Paciente</a>
+    <br><br>
+    <?php
+    if(mysqli_num_rows($registros) > 0){
+    ?>
+     <h1>Listagem da Tabela de Pacientes</h1>
+    <table border="3">
         <tr>
             <th>Cod</th>
             <th>Nome</th>
@@ -37,6 +40,9 @@ if(mysqli_num_rows($registros) > 0){
             <td><?php echo $reg['celular'];?></td>
             <td><?php echo $reg['email'];?></td>
             <td><?php echo $reg['convenio'];?></td>
+            <td><a href="editapaciente.php?paciente=<?php echo $reg['id_paciente'];?>">Editar</a></td>
+            <td><a href="?paciente=<?php echo $reg['id_paciente'];?>">Excluir</a></td>
+       
         </tr>
     <?php
     }

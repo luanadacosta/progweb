@@ -66,15 +66,15 @@ class MedicoController extends Crud {
     //Métodos para editar medicos
 
     public function editaMedico($p0,$p1,$p2,$p3,$p4,$p5){
-        $sql = "UPDATE" .$this->tabelafilha."
+        $sql = "UPDATE " .$this->tabelafilha."
                 SET
-                (
+                
                     id_usuario = ".$p1.",
                     nome = '".$p2."',               
                     telefone = '".$p3."',
                     email = '".$p4."',
                     celular = '".$p5."'
-                )
+                
                 WHERE
                     id_medico = ".$p0."
                 ";    
@@ -90,6 +90,7 @@ class MedicoController extends Crud {
     }
 
     //Método que carrega os dados do médico
+    
     public function carregaMedico($medico){
         $sql = "SELECT * FROM ".$this->tabelafilha."
             WHERE id_medico = ".$medico."";

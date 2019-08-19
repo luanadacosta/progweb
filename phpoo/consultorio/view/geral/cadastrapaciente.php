@@ -3,7 +3,7 @@ require_once("cabecalho.view.php");
 ?>
     <section id="conteudo">
         <?php
-        require_once("../paciente/listapaciente.php");
+        require_once("../paciente/cadastraPaciente.php");
         ?>
     </section>
 <?php
