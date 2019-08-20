@@ -20,6 +20,7 @@ if(isset($_GET["submit"])){
 ?>
 <form method="get">
     <input type="hidden" name="p0" value="<?php echo $_GET["medico"];?>">
+    
     <label for="p1">Usuário</label>
     <input type="text" name="p1"placeholder="Informe o usuário" value="<?php echo $regmedico["id_usuario"]?>"><br>
 

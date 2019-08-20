@@ -54,7 +54,6 @@ span{
 footer{
     padding: 5px;
     color: #f7fdfa;
-   
     font-family: 'Fjalla One', sans-serif;
     background-color: #616164;
 }
@@ -69,14 +68,6 @@ a{
 
 ul{
     display: flex;
-    
-    
-}
-
-li{
-    color: #3877ec;
-    inline-size: auto;
-    margin: 20px;
 }
 
 #topo div{
@@ -101,13 +92,14 @@ h3{
     color: #f7fdfa;
 }
 
-#table-border {
-    display: table;
-    border-collapse: separate;
-    border-spacing: 2px;
-    border-color: rgb(224, 15, 15);
-}
 
+
+
+li{
+    color: #141680;
+    font-size: 15px;
+    border:5px none;
+}
 
 
 

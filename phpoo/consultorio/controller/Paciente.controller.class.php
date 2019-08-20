@@ -49,11 +49,12 @@ class PacienteController extends Crud {
         $sql = "UPDATE " .$this->tabelafilha."
         SET
         
-            id_usuario = ".$p1.",
-            nome = '".$p2."',               
-            telefone = '".$p3."',
-            email = '".$p4."',
-            celular = '".$p5."'
+            
+            nome = '".$p1."',               
+            telefone = '".$p2."',
+            email = '".$p3."',
+            celular = '".$p4."',
+            convenio = '".$p5."'
         
         WHERE
             id_paciente= ".$p0."

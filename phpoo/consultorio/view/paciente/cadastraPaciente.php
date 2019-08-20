@@ -30,8 +30,8 @@ header("Location: listadepaciente.php");
     <input type="text" name="p4"placeholder="Informe o celular"><br>
     
     
-    <label for="p1">Usuário</label>
-    <input type="text" name="p4"placeholder="Informe o usuário"><br>
+    <label for="p5">Convênio</label>
+    <input type="text" name="p5"placeholder="Informe o usuário"><br>
     <input type="submit" name="submit" value="Cadastrar"> 
 
 </form>

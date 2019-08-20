@@ -16,7 +16,6 @@ if(isset($_GET["medico"])){
 $registros = $controller->select();
 ?>
 
-
 <!--listagem-->
 <?php
 if(mysqli_num_rows($registros) > 0){

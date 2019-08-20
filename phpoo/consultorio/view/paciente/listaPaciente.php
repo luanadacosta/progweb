@@ -20,7 +20,7 @@ $registros = $controller->select();
     <?php
     if(mysqli_num_rows($registros) > 0){
     ?>
-     <h1>Listagem da Tabela de Pacientes</h1>
+     <h2>Listagem da Tabela de Pacientes</h2>
     <table border="3">
         <tr>
             <th>Cod</th>
@@ -29,6 +29,8 @@ $registros = $controller->select();
             <th>Celular</th>
             <th>E-mail</th>
             <th>Convenio</th>
+            <th>Editar</th>
+            <th>Excluir</th>
         </tr>
     <?php
 	while($reg = mysqli_fetch_array($registros)){
