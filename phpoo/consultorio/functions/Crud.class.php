@@ -7,7 +7,7 @@
  */
 
 //Importa as classes
-require_once("../../functions/Reflection.class.php");
+require_once("../../functions/Reflections.class.php");
 require_once("../../functions/connection.class.php");
 
 abstract class Crud {
@@ -38,34 +38,24 @@ abstract class Crud {
         return $this->execute_query($sql);
     }
 
-    // Método de execução das consultas
-    public function execute_query($sql) {
-        $conn = new Connection;
-        $conn->openConnection();
-        $executed = mysqli_query(
-                    $conn->getConnection(),
-                    $sql)
-                    or die("Erro: ". mysqli_error($conn->getConnection()). " na query ". $sql);
-        $conn->closeConnection();
-        return $executed;
-    }
 
         public function save($object) {
-            $ref = new Reflection();
-            $values = $ref .convert($object);
-            $sql =  "INSERT INTO" . $this->tabela;
-            $sql = "(" . implode(",", $values['fields']) . ") VALUES (";
+            $ref = new Reflections();
+            $values = $ref->convert($object);
+            $sql =  "INSERT INTO " . $this->tabela;
+            $sql .= "(" . implode(",", $values['fields']) . ") VALUES (";
             $size = count($values['fields']);
             $loop = 1;
             for($j = 0; $j < $size; $j++){
                 $sql .= $ref->get_value_by_type($values['values'][$j]);
-                $sql  = ($loop < $size) ? "," : "";
+                $sql .= ($loop < $size) ? "," : "";
                 $loop++;
             }
         
         //Método de conclsãp
             $sql .= " ) ;";
-            $this ->execute_execute_query($sql);
+            echo $sql;
+            $this ->execute_query($sql);
             $sqlmax = "select MAX(id_".$this->tabela.") as ultimo from ".$this->tabela;
             $ressave = $this->execute_query($sqlmax);
             $regsave = mysqli_fetch_array($ressave);
@@ -77,10 +67,10 @@ abstract class Crud {
             if(empty($attr))
             return false;
 
-            $ref = new Reflection();
+            $ref = new Reflections();
             $values = $ref->convert($object);
             $sql = "UPDATE " . $this->tabela . " SET ";
-            $size = count($vlaues['fields']);
+            $size = count($values['fields']);
             $loop = 1;
             for ($j = 0; $j < $size; $j++){
                 if($values['fields'][$j] != $attr) {
@@ -89,11 +79,32 @@ abstract class Crud {
             }
             $loop++;
         }
-        $attribute = $ref->get_value_type($values['values'][array_search($attr, $values['field'])]);
-        $sql .= "WHERE" . $attr . " = " .$attribute . " ;";
+        $attribute = $ref->get_value_by_type($values['values'][array_search($attr, $values['fields'])]);
+        $sql .= "WHERE " . $attr . " = " .$attribute . " ;";
         return $this->execute_query($sql);
     }
+        //Método para carregar os valores
+        public function loadObject($value, $attr){
+            if (empty($attr))
+                return false;
+            $sql = "SELECT * FROM " . $this->tabela. " WHERE " . $attr . " = " .$value . " ;";
+            return mysqli_fetch_object($this->execute_query($sql), $this->tabela);
+        }
 
         //Método de execução das consultas
+        public function execute_query($sql){
+            $conn = new Connection;
+            $conn->openCOnnection();
+            $executed = mysqli_query(
+                            $conn->getConnection(),
+                            $sql
+            ) or die (
+                "Erro: " . mysqli_error($conn->getConnection()) . " na query " . $sql
+            );
+
+            $conn->closeConnection();
+            return $executed;
+        }
+
 }
 ?>

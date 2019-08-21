@@ -18,13 +18,8 @@ body{
     margin-top: 20px;
 }
 
-span{
-    
-    font-family: 'Times New Roman', Times, serif;
-    color: rgb(241, 243, 247);
-    padding: 1px;
-    font-size: 15px;
-}
+
+
 
 #submenu {
     padding: 5px;
@@ -47,7 +42,7 @@ span{
     width: 100%;
     opacity: 1;
     visibility: inherit;
-    z-index: 20;
+   
     
 }
 
@@ -63,12 +58,14 @@ footer{
 a{
     color: #64a4ec;
     font-size: 20px;
-    border: 20px none;
+  
 }
 
 ul{
     display: flex;
+    list-style: none;
 }
+
 
 #topo div{
     display: flex;
@@ -99,6 +96,7 @@ li{
     color: #141680;
     font-size: 15px;
     border:5px none;
+    margin: 0 10px;
 }
 
 

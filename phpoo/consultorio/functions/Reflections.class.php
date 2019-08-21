@@ -1,5 +1,5 @@
 <?php
-class Reflection{
+class Reflections{
 //Metodos de conversao de campos e valores
 public function convert($object){
     $fields = array();
@@ -11,7 +11,7 @@ public function convert($object){
         $atributo->setAccessible(true);
         if($atributo->getValue($object)){
             array_push($fields, $atributo->getName());
-            array_push($values, $atributo->getName($object));
+            array_push($values, $atributo->getValue($object));
         }
     }
 

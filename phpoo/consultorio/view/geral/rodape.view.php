@@ -13,8 +13,7 @@
                 diferenciado em consultas médicas, diagnóstico por imagem e exames laboratoriais<br> 
                 de qualidade com valores acessíveis e pagamentos facilitados.<br></h3></div>
             
-                <span>Dr_saúde@hotmail.com</span>
-                <span>(19) 3622-1234</span>
+               
 
         </footer>
     <main>
