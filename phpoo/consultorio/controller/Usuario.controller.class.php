@@ -18,19 +18,15 @@ class UsuarioController extends Crud {
         parent::__construct($this->tabelafilha);
     }
      //Pesquisa Usuarios Ativos
-    public function pesquisaUsuariosAtivos(){
-        $sql = "SELECT * FROM ".$this->tabelafilha." 
-               WHERE status = 1 ";
-        return $this->execute_query($sql);
+    public function loginDeUsuario($email,$senha){
+        $sql = ".." 
+        $resultado = $this->execute_query($sql);
+        $linhas = mysqli_num_rows($resultado);
+        if($linhas>0){ 
+            return true;
+        }else{
+            return false;
+        }
     }
-
-    public function pesquisaUsuarios($expressao){
-        $sql = "SELECT * FROM usuario AS usu
-        INNER JOIN medico AS med ON med.id_usuario = usu.id_usuario
-        WHERE med.nome LIKE '%".$expressao."%'";
-        return $this->execute_query($sql);
-    }
-
-
 }
 ?>

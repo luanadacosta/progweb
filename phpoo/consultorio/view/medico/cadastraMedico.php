@@ -7,7 +7,7 @@ require_once("../../controller/Medico.controller.class.php");
 //Criando as novas instancias das classes
 $controller = new MedicoController;
 
-//Metodo de listahgem
+//Metodo de listagem
 $controller->cadastraMedico($_GET["p1"],$_GET["p2"],$_GET["p3"],$_GET["p4"],$_GET["p5"]);
 
 //Redireciono para a listagem

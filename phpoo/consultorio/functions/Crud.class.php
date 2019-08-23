@@ -52,7 +52,7 @@ abstract class Crud {
                 $loop++;
             }
         
-        //Método de conclsãp
+        //Método de conclusão
             $sql .= " ) ;";
             echo $sql;
             $this ->execute_query($sql);

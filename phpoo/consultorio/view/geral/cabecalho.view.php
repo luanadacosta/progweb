@@ -17,19 +17,24 @@
                     <div id="imagem">
                         <img class="<img class="logo-main scale-with-grid src="http://drsaudecarapicuiba.com.br/wp-content/uploads/logo-1.png" data-retina="http://drsaudecarapicuiba.com.br/wp-content/uploads/logo-1.png" data-height="83" alt="logo"><br>
                     </div>
-            
-                <ul> 
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Especialidades</a></li>
-                    <li><a href="#">Exames</a></li>
-                    <li><a href="#">Equipe Médica</a></li>
-                    <li><a href="#">Contato</a></li>
-
-                </ul>
-            </div>
-            <nav> 
-               <div id="submenu">
-
-            </nav>
-        </header>
+                    <?php
+                    session_start();
+                    if(isset($_SESSION["logado"])){
+                    ?>
+                    <nav>
+                        <ul> 
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Especialidades</a></li>
+                            <li><a href="#">Exames</a></li>
+                            <li><a href="#">Equipe Médica</a></li>
+                            <li><a href="#">Contatos</a></li>
+                         </ul>
+                    </nav>
+                    <?php
+                    }else{
+                        echo"<p>Bem vindo, faça seu login</p>";
+                    }
+                    ?>
+                </header>
+        
     
