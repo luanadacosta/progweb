@@ -15,7 +15,7 @@
                     <div id="../../assets/img/logo.png">
 
                     <div id="imagem">
-                        <img class="<img class="logo-main scale-with-grid src="http://drsaudecarapicuiba.com.br/wp-content/uploads/logo-1.png" data-retina="http://drsaudecarapicuiba.com.br/wp-content/uploads/logo-1.png" data-height="83" alt="logo"><br>
+                    <img class="<img class="logo-main scale-with-grid src="http://drsaudecarapicuiba.com.br/wp-content/uploads/logo-1.png" data-retina="http://drsaudecarapicuiba.com.br/wp-content/uploads/logo-1.png" data-height="83" alt="logo"><br>
                     </div>
                     <?php
                     session_start();

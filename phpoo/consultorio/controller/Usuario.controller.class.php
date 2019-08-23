@@ -19,7 +19,9 @@ class UsuarioController extends Crud {
     }
      //Pesquisa Usuarios Ativos
     public function loginDeUsuario($email,$senha){
-        $sql = ".." 
+        $sql = "SELECT usu.id_usuario FROM ".$this->tabelafilha. " AS usu 
+        INNER JOIN medico AS med ON med.id_usuario = usu.id_usuario WHERE 
+        usu.senha = '".$senha."' AND med.email = '".$email. "'";
         $resultado = $this->execute_query($sql);
         $linhas = mysqli_num_rows($resultado);
         if($linhas>0){ 

@@ -10,7 +10,7 @@ require_once("../../controller/Usuario.controller.class.php");
 //Criando as novas instâncias das classes
 $controller = new UsuarioController;
 //Método de Listagem
-$registros 	= $controller->pesquisaUsuariosAtivos();
+$registros = $controller->pesquisaUsuariosAtivos();
 ?>
 
 <!-- Listagem -->
